@@ -37,7 +37,7 @@ const foodBuilderReducer = (state = foodBuilderState, action) => {
         case foodBuilderActionType.ADD_INGREDIENT:
             return addIngredient(state,action)
         case foodBuilderActionType.REMOVE_INGREDIENT:
-            removeIngredient(state,action)
+            return removeIngredient(state,action)
         default:
             return state
     }

@@ -45,15 +45,18 @@ export const Auth = (email, password) => {
             email: email,
             password: password
         }
-        axios.post('posts', authData).then((response) => {
-            console.log(response);
-            localStorage.setItem('token', 'alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj')
-            localStorage.setItem('expire_date', 456000)
-            dispatch(AuthSuccess('alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj', 1));
-        }).catch(error => {
-            console.log('error', error);
-            dispatch(AuthFail(error));
-        });
+        // axios.post('posts', authData).then((response) => {
+        //     console.log(response);
+        //     localStorage.setItem('token', 'alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj')
+        //     localStorage.setItem('expire_date', 456000)
+        //     dispatch(AuthSuccess('alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj', 1));
+        // }).catch(error => {
+        //     console.log('error', error);
+        //     dispatch(AuthFail(error));
+        // });
+        localStorage.setItem('token', 'alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj')
+        localStorage.setItem('expire_date', 456000)
+        dispatch(AuthSuccess('alskdjaliuqon,xcnz,ckhasdfihfaskldcn,xmnczj,xhkajsdhkajshdkaj', 1));
     }
 }
 
