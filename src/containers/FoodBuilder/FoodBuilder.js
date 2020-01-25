@@ -138,7 +138,7 @@ class FoodBuilder extends Component {
   render() {
 
     const disableInfo = {
-      ...this.state.ingredients
+      ...this.props.ings
     }
     for (let key in disableInfo) {
       disableInfo[key] = disableInfo[key] <= 0
